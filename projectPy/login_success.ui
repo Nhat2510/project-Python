@@ -6,30 +6,141 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>488</width>
-    <height>600</height>
+    <width>749</width>
+    <height>581</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="btnCreatetk">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>120</y>
-      <width>321</width>
-      <height>191</height>
+      <x>181</x>
+      <y>104</y>
+      <width>400</width>
+      <height>50</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>271</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="text">
-     <string>Login success</string>
+     <string>Tạo tài khoản</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cnttsv">
+    <property name="geometry">
+     <rect>
+      <x>181</x>
+      <y>206</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>271</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Cập nhật thông tin sinh viên </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bth_khoatk">
+    <property name="geometry">
+     <rect>
+      <x>181</x>
+      <y>257</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>271</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Khóa tài khoản</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_suadiem">
+    <property name="geometry">
+     <rect>
+      <x>181</x>
+      <y>309</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>271</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Sửa điểm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_view_all_sv">
+    <property name="geometry">
+     <rect>
+      <x>181</x>
+      <y>360</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>271</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Xem thông tin tất cả sinh viên</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_thsv">
+    <property name="geometry">
+     <rect>
+      <x>181</x>
+      <y>155</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thêm sinh viên</string>
     </property>
    </widget>
   </widget>
@@ -38,7 +149,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>488</width>
+     <width>749</width>
      <height>26</height>
     </rect>
    </property>

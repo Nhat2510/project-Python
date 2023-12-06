@@ -1,58 +1,30 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QStackedWidget, QMessageBox
+from PyQt6.QtWidgets import *
+from PyQt6 import QtCore
 from PyQt6.uic import loadUi
 import sys
 import pyodbc as mdb
-from ViewPoint import ViewPoint
-
-# Cửa sổ login
-class Login_w(QMainWindow):
-    def __init__(self, widget):
-        super(Login_w, self).__init__()
-        loadUi('Login.ui', self)
-        self.btn_log.clicked.connect(self.login)
-        self.widget = widget
-        
-    def login(self):
-        un = self.txt_user.text()
-        psw = self.txt_pass.text()
-        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-2A8I63E5\SQLEXPRESS;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
-        db = mdb.connect(connection_string)
-        query = db.cursor()
-        query.execute("SELECT * FROM ACCOUNT WHERE username=? AND pass=?", (un, psw))
-        result = query.fetchone()
-        if result:
-            QMessageBox.information(self, "Login output", "Login success")
-            self.widget.setCurrentIndex(2)  # Assuming the index for the Main_w is 1
-        else:
-            QMessageBox.information(self, "Login output", "Login fail")
-
-class Main_w(QMainWindow):
-    def __init__(self):
-        super(Main_w, self).__init__()
-        loadUi('login_success.ui', self)
-class Home_w(QMainWindow):
-    def __init__(self,widget):
-        super(Home_w, self).__init__()
-        loadUi('Home.ui', self)
-        self.b2.clicked.connect(self.admin)
-        self.widget = widget
-    def admin(self):
-        self.widget.setCurrentIndex(1)
+from PyQt6.QtCore import *
+import re
+from ThemSV import them_SV
+from UpdateSV import Update_SV
+from Login import Login_w
+from listFuture import ListFuture
+from home import Home_w
 
 
 app = QApplication(sys.argv)
 widget = QStackedWidget()
 Home_f=Home_w(widget)
 Login_f = Login_w(widget)
-Main_f = Main_w()
-View_f = ViewPoint(widget)
-
+ListFuture_f = ListFuture(widget)
+them_SV_f=them_SV(widget)
+Update_SV_f=Update_SV(widget)
 widget.addWidget(Home_f)
 widget.addWidget(Login_f)
-widget.addWidget(Main_f)
-widget.addWidget(View_f)
-widget.setCurrentIndex(3)
-widget.setFixedHeight(800)
-widget.setFixedWidth(800)
+widget.addWidget(ListFuture_f)
+widget.addWidget(them_SV_f)
+widget.addWidget(Update_SV_f)
+widget.resize(1000,800)
+
 widget.show()
 sys.exit(app.exec())

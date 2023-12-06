@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>945</width>
+    <height>601</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QLabel" name="user">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>140</y>
-      <width>181</width>
-      <height>16</height>
+      <x>230</x>
+      <y>170</y>
+      <width>86</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
@@ -37,10 +37,10 @@
    <widget class="QLabel" name="psw">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>220</y>
-      <width>181</width>
-      <height>16</height>
+      <x>230</x>
+      <y>260</y>
+      <width>83</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
@@ -57,20 +57,20 @@
    <widget class="QLineEdit" name="txt_user">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>160</y>
-      <width>271</width>
-      <height>31</height>
+      <x>230</x>
+      <y>200</y>
+      <width>421</width>
+      <height>41</height>
      </rect>
     </property>
    </widget>
    <widget class="QLineEdit" name="txt_pass">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>240</y>
-      <width>271</width>
-      <height>31</height>
+      <x>230</x>
+      <y>290</y>
+      <width>421</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="echoMode">
@@ -80,8 +80,8 @@
    <widget class="QPushButton" name="btn_log">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>310</y>
+      <x>650</x>
+      <y>360</y>
       <width>93</width>
       <height>31</height>
      </rect>
@@ -97,13 +97,33 @@
      <string>Login</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>110</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ĐĂNG NHẬP</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>945</width>
      <height>26</height>
     </rect>
    </property>
