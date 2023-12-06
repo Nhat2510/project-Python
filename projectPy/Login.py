@@ -21,12 +21,12 @@ class Login_w(QMainWindow):
         query.execute("SELECT * FROM ACCOUNT WHERE username=? AND pass=?", (un, psw))
         result = query.fetchone()
         if result:
-            query.execute("SELECT check_account FROM ACCOUNT WHERE username=?", (un,))
-            check_account = query.fetchone()
-            if check_account and check_account[0]:
-                role_names = check_account[0].split(',')
+            query.execute("SELECT MaAC FROM ACCOUNT WHERE username=?", (un,))
+            MaAC = query.fetchone()
+            if MaAC and MaAC[0]:
+                MaAC_names = MaAC[0].split(',')
                 file=open('personDN.txt','w')
-                file.write(role_names[0])
+                file.write(MaAC_names[0])
                 QMessageBox.information(self, "Login output", "Login success")
                 self.widget.setCurrentIndex(2)
             else:
