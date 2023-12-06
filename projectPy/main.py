@@ -2,6 +2,7 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QStackedWidget, 
 from PyQt6.uic import loadUi
 import sys
 import pyodbc as mdb
+from ViewPoint import ViewPoint
 
 # Cửa sổ login
 class Login_w(QMainWindow):
@@ -14,7 +15,7 @@ class Login_w(QMainWindow):
     def login(self):
         un = self.txt_user.text()
         psw = self.txt_pass.text()
-        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
+        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-2A8I63E5\SQLEXPRESS;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
         db = mdb.connect(connection_string)
         query = db.cursor()
         query.execute("SELECT * FROM ACCOUNT WHERE username=? AND pass=?", (un, psw))
@@ -44,10 +45,13 @@ widget = QStackedWidget()
 Home_f=Home_w(widget)
 Login_f = Login_w(widget)
 Main_f = Main_w()
+View_f = ViewPoint(widget)
+
 widget.addWidget(Home_f)
 widget.addWidget(Login_f)
 widget.addWidget(Main_f)
-widget.setCurrentIndex(0)
+widget.addWidget(View_f)
+widget.setCurrentIndex(3)
 widget.setFixedHeight(800)
 widget.setFixedWidth(800)
 widget.show()
