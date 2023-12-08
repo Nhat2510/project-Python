@@ -9,6 +9,9 @@ class Home_w(QMainWindow):
         super(Home_w, self).__init__()
         loadUi('Home.ui', self)
         self.b2.clicked.connect(self.admin)
+        self.b1.clicked.connect(self.sv)
         self.widget = widget
     def admin(self):
         self.widget.setCurrentIndex(1)
+    def sv(self):
+        self.widget.setCurrentIndex(10)
