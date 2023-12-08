@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>250</x>
       <y>30</y>
       <width>361</width>
       <height>61</height>
@@ -37,8 +37,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>160</y>
+      <x>160</x>
+      <y>150</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -55,20 +55,20 @@
    <widget class="QLineEdit" name="name">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>160</y>
-      <width>261</width>
-      <height>22</height>
+      <x>270</x>
+      <y>150</y>
+      <width>320</width>
+      <height>30</height>
      </rect>
     </property>
    </widget>
    <widget class="QLineEdit" name="Masv">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>270</x>
       <y>200</y>
-      <width>261</width>
-      <height>22</height>
+      <width>320</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
@@ -78,7 +78,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>160</x>
       <y>200</y>
       <width>81</width>
       <height>21</height>
@@ -96,8 +96,8 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>240</y>
+      <x>160</x>
+      <y>250</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -114,8 +114,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>280</y>
+      <x>160</x>
+      <y>300</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -132,18 +132,18 @@
    <widget class="QDateEdit" name="Ngay_sinh">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>280</y>
-      <width>110</width>
-      <height>22</height>
+      <x>270</x>
+      <y>300</y>
+      <width>111</width>
+      <height>30</height>
      </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>320</y>
+      <x>160</x>
+      <y>350</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -160,10 +160,10 @@
    <widget class="QLineEdit" name="Email">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>320</y>
-      <width>261</width>
-      <height>22</height>
+      <x>270</x>
+      <y>350</y>
+      <width>320</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
@@ -173,10 +173,10 @@
    <widget class="QLineEdit" name="SDT">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>360</y>
-      <width>261</width>
-      <height>22</height>
+      <x>270</x>
+      <y>400</y>
+      <width>320</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
@@ -186,8 +186,8 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>360</y>
+      <x>160</x>
+      <y>400</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -204,10 +204,10 @@
    <widget class="QComboBox" name="Gioi_tinh">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>240</y>
-      <width>73</width>
-      <height>22</height>
+      <x>270</x>
+      <y>250</y>
+      <width>61</width>
+      <height>30</height>
      </rect>
     </property>
     <item>
@@ -225,7 +225,7 @@
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>410</y>
+      <y>470</y>
       <width>111</width>
       <height>31</height>
      </rect>
@@ -249,7 +249,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Back</string>
+     <string>Quay lại</string>
     </property>
    </widget>
   </widget>
