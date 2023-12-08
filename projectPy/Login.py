@@ -21,6 +21,7 @@ class Login_w(QMainWindow):
         query.execute("SELECT * FROM ACCOUNT WHERE username=? AND pass=?", (un, psw))
         result = query.fetchone()
         if result:
+            
             query.execute("SELECT MaAC FROM ACCOUNT WHERE username=?", (un,))
             MaAC = query.fetchone()
             if MaAC and MaAC[0]:
@@ -28,6 +29,8 @@ class Login_w(QMainWindow):
                 file=open('personDN.txt','w')
                 file.write(MaAC_names[0])
                 QMessageBox.information(self, "Login output", "Login success")
+                self.txt_user.clear()
+                self.txt_pass.clear()
                 self.widget.setCurrentIndex(2)
             else:
                 QMessageBox.information(self, "Login output", "User has no roles assigned.")
