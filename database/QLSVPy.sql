@@ -1,5 +1,5 @@
 ﻿CREATE DATABASE QLSVPY
-
+go
 USE QLSVPY 
 GO 
 
@@ -39,6 +39,7 @@ CREATE TABLE DIEM(
 	MaMon varchar(10) REFERENCES MON,
 	Diem decimal(3,1)
 )
+
 
 -- Tạo dữ liệu cho bảng ACCOUNT
 INSERT INTO ACCOUNT (MaAC, username, pass, roles)

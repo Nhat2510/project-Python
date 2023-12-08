@@ -45,6 +45,7 @@ class Update_SV(QMainWindow):
         if not mssv:
             QMessageBox.warning(self, 'Warning', 'Vui lòng nhập mã số sinh viên.')
             self.clear_textboxes()
+            self.groupBox.setEnabled(False)
             return
         
         if student_data:
@@ -55,8 +56,10 @@ class Update_SV(QMainWindow):
                 self.Ngay_sinh.setDate(QtCore.QDate(birth_date))
             self.Email.setText(student_data['email'])
             self.SDT.setText(student_data['sdt'])
+            self.groupBox.setEnabled(True)
         else:
             QMessageBox.warning(self, 'Warning', 'Mã sinh viên không hợp lệ. Vui lòng nhập lại')
+            self.groupBox.setEnabled(False)
             self.clear_textboxes()
 
     def update(self):

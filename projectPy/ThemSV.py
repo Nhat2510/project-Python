@@ -72,6 +72,16 @@ class them_SV(QMainWindow):
                         f"VALUES ('{mssv}', '{name}', '{gioitinh}', '{ngaysinh}', '{sdt}', '{email}')"
             cursor.execute(sql_query)
             db.commit()
+            cursor.execute(f"INSERT INTO DIEM (MaSV,MaMon)"\
+                        f" VALUES ('{mssv}', 'M001')")
+            db.commit()
+            cursor.execute(f"INSERT INTO DIEM (MaSV,MaMon)"\
+                        f" VALUES ('{mssv}', 'M002')")
+            db.commit()
+            cursor.execute(f"INSERT INTO DIEM (MaSV,MaMon)"\
+                        f" VALUES ('{mssv}', 'M003')")
+            db.commit()
+            
             db.close()
 
             QMessageBox.information(self, "Success", "Thêm dữ liệu vào bảng SINHVIEN thành công")
