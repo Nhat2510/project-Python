@@ -57,7 +57,7 @@ widget.addWidget(Block_Account_f)
 
 
 
-widget.setCurrentIndex(2)
+widget.setCurrentIndex(0)
 widget.resize(1000,650)
 widget.show()
 sys.exit(app.exec())

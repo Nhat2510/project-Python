@@ -5,7 +5,7 @@ import pyodbc as mdb
 from math import *
 
 class ViewPointAll(QMainWindow):
-    connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
+    connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-2A8I63E5\SQLEXPRESS;DATABASE=QLSVPY;UID=thanhan123;PWD=123456'
     db = mdb.connect(connection_string)
     def __init__(self,widget):
         super(ViewPointAll, self).__init__()
@@ -18,6 +18,7 @@ class ViewPointAll(QMainWindow):
         self.sort_default.clicked.connect(self.start)
         self.btn_close.clicked.connect(self.close)
     def close(self):
+        self.clear()
         self.widget.setCurrentIndex(2)
     def clear(self):
         self.ip.setText("")

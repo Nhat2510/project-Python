@@ -22,7 +22,7 @@ class Login_w(QMainWindow):
     def login(self):
         un = self.txt_user.text()
         psw = self.txt_pass.text()
-        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
+        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-2A8I63E5\SQLEXPRESS;DATABASE=QLSVPY;UID=thanhan123;PWD=123456'
         db = mdb.connect(connection_string)
         query = db.cursor()
         query.execute("SELECT * FROM ACCOUNT WHERE username=? AND pass=?", (un, psw))

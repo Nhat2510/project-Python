@@ -21,7 +21,7 @@ class Block_Account(QMainWindow):
         if button_reply == QMessageBox.StandardButton.No:
             return
         
-        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
+        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-2A8I63E5\SQLEXPRESS;DATABASE=QLSVPY;UID=thanhan123;PWD=123456'
         
         try:
             db = mdb.connect(connection_string)
@@ -52,7 +52,7 @@ class Block_Account(QMainWindow):
         if button_reply == QMessageBox.StandardButton.No:
             return
         
-        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
+        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-2A8I63E5\SQLEXPRESS;DATABASE=QLSVPY;UID=thanhan123;PWD=123456'
         
         try:
             db = mdb.connect(connection_string)
@@ -67,7 +67,7 @@ class Block_Account(QMainWindow):
                     self.text_ac.clear()
                     return
                 else: 
-                    connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
+                    connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-2A8I63E5\SQLEXPRESS;DATABASE=QLSVPY;UID=thanhan123;PWD=123456'
                     db= mdb.connect(connection_string)
                     cursor = db.cursor()
                     cursor.execute(f"UPDATE ACCOUNT SET check_account='activity' WHERE MaAC='{MaAC}'")

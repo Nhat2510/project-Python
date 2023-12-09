@@ -24,6 +24,7 @@ class them_SV(QMainWindow):
         self.SDT.clear()
     
     def back(self):
+        self.reset_f()
         self.widget.setCurrentIndex(2)
 
 
@@ -61,7 +62,7 @@ class them_SV(QMainWindow):
         if button_reply == QMessageBox.StandardButton.No:
             return
 
-        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
+        connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-2A8I63E5\SQLEXPRESS;DATABASE=QLSVPY;UID=thanhan123;PWD=123456'
         try:
             db = mdb.connect(connection_string)
             cursor = db.cursor()

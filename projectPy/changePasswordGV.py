@@ -4,7 +4,7 @@ import sys
 import pyodbc as mdb
 
 class ChangePasswordGV(QMainWindow):
-    connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
+    connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-2A8I63E5\SQLEXPRESS;DATABASE=QLSVPY;UID=thanhan123;PWD=123456'
     db = mdb.connect(connection_string)
     def __init__(self,widget):
         super(ChangePasswordGV, self).__init__()
