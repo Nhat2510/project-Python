@@ -103,3 +103,4 @@ class Update_SV(QMainWindow):
         self.Ngay_sinh.setDate(QtCore.QDate.currentDate())
         self.Email.clear()
         self.SDT.clear()
+        self.groupBox.setEnabled(False)
