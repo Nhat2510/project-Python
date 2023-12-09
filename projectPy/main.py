@@ -11,7 +11,7 @@ from Login import Login_w
 from listFuture import ListFuture
 from home import Home_w
 from ViewPoint import ViewPoint
-from CreateSubject import Create_Subject
+from changePassswordAD import changePassswordAD
 from BlockAccount import Block_Account
 from ViewPointAll import ViewPointAll
 from menuGV import MenuGV
@@ -25,7 +25,7 @@ widget = QStackedWidget()
 Home_f=Home_w(widget)
 Login_f = Login_w(widget)
 ListFuture_f = ListFuture(widget)
-Create_Subject_f = Create_Subject(widget)
+changePassswordAD_f = changePassswordAD(widget)
 them_SV_f=them_SV(widget)
 Update_SV_f=Update_SV(widget)
 Block_Account_f=Block_Account(widget)
@@ -51,7 +51,7 @@ widget.addWidget(ChangePasswordGV_f)
 #10
 widget.addWidget(ViewInfoSV_f)
 #11
-widget.addWidget(Create_Subject_f)
+widget.addWidget(changePassswordAD_f)
 #12
 widget.addWidget(Block_Account_f)
 

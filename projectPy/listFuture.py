@@ -8,7 +8,7 @@ class ListFuture(QMainWindow):
         super(ListFuture, self).__init__()
         loadUi('ListFuture.ui', self)
         self.widget=widget
-        self.btnCreatetk.clicked.connect(self.taoTK)
+        self.btnChangePass.clicked.connect(self.changepass)
         self.btn_thsv.clicked.connect(self.addsv)
         self.btn_cnttsv.clicked.connect(self.updatesv)
         self.bth_khoatk.clicked.connect(self.khoatk)
@@ -20,7 +20,7 @@ class ListFuture(QMainWindow):
         self.widget.setCurrentIndex(3)
     def updatesv(self):
         self.widget.setCurrentIndex(4)
-    def taoTK(self):
+    def changepass(self):
         self.widget.setCurrentIndex(11)
     def khoatk(self):
         self.widget.setCurrentIndex(12)    

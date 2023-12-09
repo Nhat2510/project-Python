@@ -17,15 +17,15 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>160</x>
       <y>130</y>
-      <width>191</width>
+      <width>221</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -55,7 +55,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>320</x>
       <y>40</y>
       <width>421</width>
       <height>60</height>
@@ -75,7 +75,7 @@
    <widget class="QLineEdit" name="Masv">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>370</x>
       <y>130</y>
       <width>320</width>
       <height>30</height>
@@ -83,7 +83,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -105,8 +105,6 @@
     <property name="font">
      <font>
       <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
      </font>
     </property>
     <property name="title">
@@ -117,13 +115,13 @@
       <rect>
        <x>20</x>
        <y>190</y>
-       <width>81</width>
+       <width>100</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -135,7 +133,7 @@
     <widget class="QLineEdit" name="SDT">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>140</x>
        <y>190</y>
        <width>500</width>
        <height>30</height>
@@ -143,7 +141,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -157,13 +155,13 @@
       <rect>
        <x>20</x>
        <y>240</y>
-       <width>81</width>
+       <width>100</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -175,7 +173,7 @@
     <widget class="QLineEdit" name="name">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>140</x>
        <y>40</y>
        <width>500</width>
        <height>30</height>
@@ -183,7 +181,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -195,7 +193,7 @@
     <widget class="QLineEdit" name="Email">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>140</x>
        <y>140</y>
        <width>500</width>
        <height>30</height>
@@ -203,7 +201,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -215,15 +213,15 @@
     <widget class="QDateEdit" name="Ngay_sinh">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>140</x>
        <y>90</y>
-       <width>120</width>
+       <width>131</width>
        <height>30</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -234,13 +232,13 @@
       <rect>
        <x>20</x>
        <y>140</y>
-       <width>81</width>
+       <width>100</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -254,13 +252,13 @@
       <rect>
        <x>20</x>
        <y>40</y>
-       <width>81</width>
+       <width>100</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -272,15 +270,15 @@
     <widget class="QComboBox" name="Gioi_tinh">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>140</x>
        <y>240</y>
-       <width>120</width>
+       <width>71</width>
        <height>30</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -301,13 +299,13 @@
       <rect>
        <x>20</x>
        <y>90</y>
-       <width>81</width>
+       <width>100</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -320,7 +318,7 @@
    <widget class="QPushButton" name="btnsearch">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>700</x>
       <y>130</y>
       <width>120</width>
       <height>30</height>
@@ -328,9 +326,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
