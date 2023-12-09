@@ -11,7 +11,13 @@ class Login_w(QMainWindow):
         super(Login_w, self).__init__()
         loadUi('Login.ui', self)
         self.btn_log.clicked.connect(self.login)
+        self.back.clicked.connect(self.back_f)
         self.widget = widget
+    
+    def back_f(self):
+        self.txt_user.clear()
+        self.txt_pass.clear()
+        self.widget.setCurrentIndex(0)
     
     def login(self):
         un = self.txt_user.text()
@@ -31,7 +37,7 @@ class Login_w(QMainWindow):
                     file.flush()
                     os.fsync(file.fileno())
                     file.close()
-                QMessageBox.information(self, "Login output", "Login success")
+                QMessageBox.information(self, "Thông báo", "Đăng nhập thành công")
                 self.txt_user.clear()
                 self.txt_pass.clear()
                 if MaAC[1] =='admin':
@@ -40,7 +46,9 @@ class Login_w(QMainWindow):
                     self.widget.setCurrentIndex(7)
                     
             else:
-                QMessageBox.information(self, "Login output", "User has no roles assigned.")
+                QMessageBox.information(self, "Thông báo", "Người dùng không có vai trò nào được chỉ định.")
         else:
-            QMessageBox.information(self, "Login output", "Login fail")
+            QMessageBox.information(self, "Thông báo", "Đăng nhập thất bại")
+            self.txt_user.clear()
+            self.txt_pass.clear()
             

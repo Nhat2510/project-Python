@@ -7,16 +7,23 @@ from PyQt6.QtCore import *
 class Update_SV(QMainWindow):
     def __init__(self, widget):
         super(Update_SV, self).__init__()
-        loadUi('CapNhatSV.ui', self)
+        loadUi('UpdateSV.ui', self)
         self.btnsearch.clicked.connect(self.search)
         self.btnUpdate.clicked.connect(self.update)
         self.btn_back.clicked.connect(self.back)
+        self.reset.clicked.connect(self.reset_f)
+        self.Ngay_sinh.setDate(QtCore.QDate.currentDate())
         self.widget = widget
 
         connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
         self.connection = mdb.connect(connection_string)
     
+    def reset_f(self):
+        self.clear_textboxes()
+        
+    
     def back(self):
+        self.clear_textboxes()
         self.widget.setCurrentIndex(2)
         
     def database_query(self, mssv):
@@ -54,9 +61,9 @@ class Update_SV(QMainWindow):
             birth_date = student_data['ngaysinh']
             if birth_date:
                 self.Ngay_sinh.setDate(QtCore.QDate(birth_date))
-            self.Email.setText(student_data['email'])
-            self.SDT.setText(student_data['sdt'])
-            self.groupBox.setEnabled(True)
+                self.Email.setText(student_data['email'])
+                self.SDT.setText(student_data['sdt'])
+                self.groupBox.setEnabled(True)
         else:
             QMessageBox.warning(self, 'Warning', 'Mã sinh viên không hợp lệ. Vui lòng nhập lại')
             self.groupBox.setEnabled(False)
@@ -90,6 +97,7 @@ class Update_SV(QMainWindow):
 
         QMessageBox.information(self, 'Information', 'Student information updated successfully!')
     def clear_textboxes(self):
+        self.Masv.clear()
         self.name.clear()
         self.Gioi_tinh.setCurrentIndex(0)
         self.Ngay_sinh.setDate(QtCore.QDate.currentDate())

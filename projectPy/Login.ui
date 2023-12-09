@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1000</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,15 +17,15 @@
    <widget class="QLabel" name="user">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>180</y>
-      <width>86</width>
+      <x>300</x>
+      <y>190</y>
+      <width>120</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -37,15 +37,15 @@
    <widget class="QLabel" name="psw">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>270</y>
-      <width>83</width>
+      <x>300</x>
+      <y>280</y>
+      <width>120</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -57,30 +57,30 @@
    <widget class="QLineEdit" name="txt_user">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>210</y>
+      <x>300</x>
+      <y>220</y>
       <width>421</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
    </widget>
    <widget class="QLineEdit" name="txt_pass">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>300</y>
+      <x>300</x>
+      <y>310</y>
       <width>421</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="echoMode">
@@ -90,15 +90,15 @@
    <widget class="QPushButton" name="btn_log">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>390</y>
-      <width>93</width>
-      <height>31</height>
+      <x>670</x>
+      <y>400</y>
+      <width>120</width>
+      <height>35</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -110,21 +110,37 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>120</y>
-      <width>171</width>
-      <height>31</height>
+      <x>400</x>
+      <y>80</y>
+      <width>251</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <pointsize>26</pointsize>
      </font>
     </property>
     <property name="text">
      <string>ĐĂNG NHẬP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>30</y>
+      <width>120</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Quay lại</string>
     </property>
    </widget>
   </widget>
@@ -133,7 +149,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1000</width>
      <height>26</height>
     </rect>
    </property>

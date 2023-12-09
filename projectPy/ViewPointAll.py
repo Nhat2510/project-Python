@@ -79,9 +79,16 @@ class ViewPointAll(QMainWindow):
 
     def loadData(self,result):
         rowNumber = 0
-        # self.table.setColumnWidth(0,140)
-        # self.table.setColumnWidth(1,393)
-        # self.table.setColumnWidth(2,95)
+        self.table.setColumnWidth(0,70)
+        self.table.setColumnWidth(1,150)
+        self.table.setColumnWidth(2,90)
+        self.table.setColumnWidth(3,80)
+        self.table.setColumnWidth(4,100)
+        self.table.setColumnWidth(5,170)
+        self.table.setColumnWidth(6, 80)
+        self.table.setColumnWidth(7, 80)
+        self.table.setColumnWidth(8, 80)
+        self.table.setColumnWidth(9, 80)
         self.table.setRowCount(len(result))
         for row in result:
             self.table.setItem(rowNumber, 0, QTableWidgetItem(row[0]))

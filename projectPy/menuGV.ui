@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1006</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,10 +18,15 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>120</y>
-      <width>251</width>
-      <height>61</height>
+      <y>219</y>
+      <width>500</width>
+      <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Cập nhật điểm</string>
@@ -31,10 +36,15 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>230</y>
-      <width>251</width>
-      <height>61</height>
+      <y>315</y>
+      <width>500</width>
+      <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Xem điểm</string>
@@ -44,10 +54,15 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>340</y>
-      <width>251</width>
-      <height>61</height>
+      <y>410</y>
+      <width>500</width>
+      <height>80</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Đổi mật khẩu</string>
@@ -56,10 +71,10 @@
    <widget class="QPushButton" name="logout">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>460</y>
-      <width>101</width>
-      <height>31</height>
+      <x>860</x>
+      <y>40</y>
+      <width>120</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -71,14 +86,34 @@
      <string>Đăng xuất</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>110</y>
+      <width>371</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Menu Giảng Viên</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>21</height>
+     <width>1006</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

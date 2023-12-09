@@ -9,9 +9,19 @@ class them_SV(QMainWindow):
     def __init__(self, widget):
         super(them_SV, self).__init__()
         loadUi('ThemSV.ui', self)
+        self.Ngay_sinh.setDate(QtCore.QDate.currentDate())
         self.btnAdd.clicked.connect(self.add)
         self.btn_Back.clicked.connect(self.back)
+        self.reset.clicked.connect(self.reset_f)
         self.widget = widget
+    
+    def reset_f(self):
+        self.Masv.clear()
+        self.name.clear()
+        self.Gioi_tinh.setCurrentIndex(0)
+        self.Ngay_sinh.setDate(QtCore.QDate.currentDate())
+        self.Email.clear()
+        self.SDT.clear()
     
     def back(self):
         self.widget.setCurrentIndex(2)

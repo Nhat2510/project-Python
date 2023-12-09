@@ -14,6 +14,23 @@ class Create_Subject(QMainWindow):
         self.widget = widget
         self.save.clicked.connect(self.get_data)
         self.btnback.clicked.connect(self.back)
+        self.reset.clicked.connect(self.reset_f)
+        self.date.setDate(QtCore.QDate.currentDate())
+        
+    def reset_f(self):
+        self.username.clear()
+        self.password.clear()
+        self.name.clear()
+        self.gioi_tinh.setCurrentIndex(0)
+        self.date.setDate(QtCore.QDate.currentDate())
+        self.numphone.clear()
+        self.mail.clear()
+        self.maGV.clear()
+        self.ma_mon.clear()
+        self.ten_mon.clear()
+        self.maAcc.clear()
+        self.role.setCurrentIndex(0)
+        
     def back(self):    
        self.widget.setCurrentIndex(2)
         
@@ -69,38 +86,65 @@ class Create_Subject(QMainWindow):
         except Exception as e:
             QMessageBox.warning(self, "Error", f"Lỗi khi kiểm tra mã giảng viên: {str(e)}")
             return
+        
+        try:
+            db = mdb.connect(connection_string)
+            cursor = db.cursor()
+            cursor.execute(f"SELECT * FROM ACCOUNT WHERE MaAC = '{ma_tk}'")
+            if cursor.fetchone():
+                QMessageBox.warning(self, "Error", "Mã tài khoản đã tồn tại. Vui lòng nhập lại.")
+                db.close()
+                return
+            db.close()
+        except Exception as e:
+            QMessageBox.warning(self, "Error", f"Lỗi khi kiểm tra mã tài khoản: {str(e)}")
+            return
+        
         try:
             db = mdb.connect(connection_string)
             cursor = db.cursor()
             cursor.execute(f"SELECT * FROM MON WHERE MaMon = '{ma_mon_hoc}'")
             if cursor.fetchone():
-                QMessageBox.warning(self, "Error", "Mã Môn học đã tồn tại. Vui lòng nhập lại.")
+                QMessageBox.warning(self, "Error", "Mã môn đã tồn tại. Vui lòng nhập lại.")
                 db.close()
                 return
             db.close()
         except Exception as e:
-            QMessageBox.warning(self, "Error", f"Lỗi khi kiểm tra mã môn học: {str(e)}")
+            QMessageBox.warning(self, "Error", f"Lỗi khi kiểm tra mã môn: {str(e)}")
+            return
+        
+        try:
+            db = mdb.connect(connection_string)
+            cursor = db.cursor()
+            cursor.execute(f"SELECT * FROM MON WHERE TenMon = '{ten_mon_hoc}'")
+            if cursor.fetchone() is None:
+                QMessageBox.warning(self, "Error", "Tên môn không tồn tại. Vui lòng nhập lại.")
+                db.close()
+                return
+            db.close()
+        except Exception as e:
+            QMessageBox.warning(self, "Error", f"Lỗi khi kiểm tra tên môn: {str(e)}")
             return
 
         try:
             db = mdb.connect(connection_string)
             cursor = db.cursor()
-            sql_query = f"INSERT INTO ACCOUNT (MaAC, username, pass, roles) " \
-                        f"VALUES ('{ma_tk}', '{ten_dang_nhap}', '{mat_khau}', '{role}')"
+            sql_query = f"INSERT INTO ACCOUNT (MaAC, username, pass, roles, check_account) " \
+                        f"VALUES ('{ma_tk}', '{ten_dang_nhap}', '{mat_khau}', '{role}','activity')"
             sql_query1 = f"INSERT INTO GIANGVIEN (MaGV, TenGV, Gioitinh, Sdt, Email, MaAC, NgaySinh) " \
                         f"VALUES ('{ma_gv}', '{ho_va_ten}', '{gioi_tinh}', '{sdt}', '{email}', '{ma_tk}', '{ngay_sinh}')"
             sql_query2 = f"INSERT INTO MON (MaMon, TenMon, MaGV) " \
                         f"VALUES ('{ma_mon_hoc}', '{ten_mon_hoc}', '{ma_gv}')"
-            cursor.execute(sql_query)
+            cursor.execute(sql_query)   
             cursor.execute(sql_query1)
             cursor.execute(sql_query2)
             db.commit()
             db.close()
 
-            QMessageBox.information(self, "Success", "Thêm dữ liệu thành công")
+            QMessageBox.information(self, "Success", "Tạo tài khoản thành công")
 
         except Exception as e:
-            QMessageBox.warning(self, "Error",f"Lỗi khi thêm dữ liệu: {str(e)}")
+            QMessageBox.warning(self, "Error",f"Lỗi khi Tạo tài khoản: {str(e)}")
             return
     
     

@@ -2,6 +2,7 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QStackedWidget, 
 from PyQt6.uic import loadUi
 import sys
 import pyodbc as mdb
+from PyQt6.QtCore import *
 
 class ViewInfoSV(QMainWindow):
     connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-RVCC8HD0;DATABASE=QLSVPY;UID=tuannhat;PWD=123123'
@@ -12,6 +13,12 @@ class ViewInfoSV(QMainWindow):
         self.widget = widget
         self.search.clicked.connect(self.find)
         self.back.clicked.connect(self.back_f)
+        self.reset.clicked.connect(self.reset_f)
+    
+    def reset_f(self):
+        self.clear()
+        self.msv.clear()
+        
     def back_f(self):
         self.clear()
         self.msv.setText('')
@@ -34,7 +41,7 @@ class ViewInfoSV(QMainWindow):
             self.groupBox.setEnabled(False)
             return
         self.name.setText(result[1])
-        self.day.setText(str(result[2]).split(' ')[0])
+        self.day.setDate(QDate(result[2].date()))
         self.sex.setText(result[3])
         self.phone.setText(result[4])
         self.email.setText(result[5])
@@ -44,7 +51,7 @@ class ViewInfoSV(QMainWindow):
         self.groupBox.setEnabled(True)
     def clear(self):
         self.name.setText('')
-        self.day.setText('')
+        self.day.setDate(QDate.currentDate())
         self.sex.setText('')
         self.phone.setText('')
         self.email.setText('')

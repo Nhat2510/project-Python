@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>862</width>
-    <height>643</height>
+    <width>1000</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QTableWidget" name="table">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>60</y>
+      <x>0</x>
+      <y>70</y>
       <width>1000</width>
       <height>341</height>
      </rect>
@@ -30,126 +30,112 @@
     </property>
     <column>
      <property name="text">
-      <string>MASV</string>
+      <string>MaSV</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
      </property>
     </column>
     <column>
      <property name="text">
       <string>Tên sinh viên</string>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
     </column>
     <column>
      <property name="text">
       <string>Ngày sinh</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
      </property>
     </column>
     <column>
      <property name="text">
       <string>Giới tính</string>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
     </column>
     <column>
      <property name="text">
       <string>SDT</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
      </property>
     </column>
     <column>
      <property name="text">
       <string>Email</string>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
     </column>
     <column>
      <property name="text">
       <string>Toán</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
      </property>
     </column>
     <column>
      <property name="text">
       <string>Tiếng anh</string>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
     </column>
     <column>
      <property name="text">
       <string>CNTT</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
      </property>
     </column>
     <column>
      <property name="text">
       <string>Điểm TB</string>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
     </column>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>410</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Sắp xếp</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>450</y>
-      <width>261</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Nhập MaSV hoặc tên :</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="ip">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>480</y>
-      <width>281</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_search">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>480</y>
-      <width>121</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Tìm kiếm</string>
-    </property>
    </widget>
    <widget class="QPushButton" name="btn_close">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>570</y>
-      <width>121</width>
-      <height>31</height>
+      <x>710</x>
+      <y>560</y>
+      <width>120</width>
+      <height>35</height>
      </rect>
     </property>
     <property name="font">
@@ -158,34 +144,54 @@
      </font>
     </property>
     <property name="text">
-     <string>Đóng</string>
+     <string>Quay lại</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_clear">
     <property name="geometry">
      <rect>
+      <x>90</x>
+      <y>560</y>
+      <width>120</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>0</y>
+      <width>691</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Xem Tất Cả Thông Tin Sinh Viên</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
       <x>10</x>
-      <y>570</y>
-      <width>121</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Clear</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="sort_desc">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>470</y>
-      <width>211</width>
-      <height>31</height>
+      <y>430</y>
+      <width>300</width>
+      <height>120</height>
      </rect>
     </property>
     <property name="font">
@@ -193,17 +199,74 @@
       <pointsize>12</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>Điểm trung bình giảm dần</string>
+    <property name="title">
+     <string>Sắp xếp</string>
     </property>
+    <widget class="QRadioButton" name="sort_asc">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>260</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Điểm trung bình tăng dần</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="sort_desc">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>260</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Điểm trung bình giảm dần</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="sort_default">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Mặc định</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
-   <widget class="QRadioButton" name="sort_asc">
+   <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>500</y>
-      <width>221</width>
-      <height>31</height>
+      <x>530</x>
+      <y>430</y>
+      <width>461</width>
+      <height>120</height>
      </rect>
     </property>
     <property name="font">
@@ -211,48 +274,55 @@
       <pointsize>12</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>Điểm trung bình tăng dần</string>
+    <property name="title">
+     <string>Tìm Kiếm</string>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>410</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Tìm kiếm:</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="sort_default">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>440</y>
-      <width>211</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Mặc định</string>
-    </property>
-    <property name="checked">
-     <bool>true</bool>
-    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Nhập MaSV hoặc tên:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ip">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>301</width>
+       <height>35</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_search">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>70</y>
+       <width>120</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Tìm kiếm</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -260,8 +330,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>862</width>
-     <height>21</height>
+     <width>1000</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

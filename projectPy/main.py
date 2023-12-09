@@ -36,18 +36,13 @@ UpdatePoint_f = UpdatePoint(widget)
 ChangePasswordGV_f = ChangePasswordGV(widget)
 ViewInfoSV_f = ViewInfoSV(widget)
 
-# 0
 widget.addWidget(Home_f) 
-# 1
 widget.addWidget(Login_f)
-# 2
 widget.addWidget(ListFuture_f)
 widget.addWidget(them_SV_f)
 widget.addWidget(Update_SV_f)
 widget.addWidget(View_Point_f)
-# 6
 widget.addWidget(View_Point_All_f)
-# 7
 widget.addWidget(MenuGV_f)
 #8
 widget.addWidget(UpdatePoint_f)
@@ -62,7 +57,7 @@ widget.addWidget(Block_Account_f)
 
 
 
-widget.setCurrentIndex(3)
-widget.resize(800,600)
+widget.setCurrentIndex(2)
+widget.resize(1000,650)
 widget.show()
 sys.exit(app.exec())

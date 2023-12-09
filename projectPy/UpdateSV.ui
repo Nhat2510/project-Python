@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1000</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>150</x>
       <y>130</y>
       <width>191</width>
       <height>31</height>
@@ -35,15 +35,15 @@
    <widget class="QPushButton" name="btnUpdate">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>510</y>
-      <width>111</width>
-      <height>31</height>
+      <x>730</x>
+      <y>520</y>
+      <width>120</width>
+      <height>35</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -55,10 +55,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>280</x>
       <y>40</y>
       <width>421</width>
-      <height>61</height>
+      <height>60</height>
      </rect>
     </property>
     <property name="font">
@@ -75,10 +75,10 @@
    <widget class="QLineEdit" name="Masv">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>350</x>
       <y>130</y>
       <width>320</width>
-      <height>32</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -87,7 +87,7 @@
      </font>
     </property>
     <property name="text">
-     <string>sdkjhksfsd</string>
+     <string/>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox">
@@ -96,9 +96,9 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>150</x>
       <y>200</y>
-      <width>691</width>
+      <width>701</width>
       <height>301</height>
      </rect>
     </property>
@@ -137,8 +137,8 @@
       <rect>
        <x>110</x>
        <y>190</y>
-       <width>450</width>
-       <height>32</height>
+       <width>500</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -177,8 +177,8 @@
       <rect>
        <x>110</x>
        <y>40</y>
-       <width>450</width>
-       <height>32</height>
+       <width>500</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -189,7 +189,7 @@
       </font>
      </property>
      <property name="text">
-      <string>sđscsdddddddddddđ</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLineEdit" name="Email">
@@ -197,8 +197,8 @@
       <rect>
        <x>110</x>
        <y>140</y>
-       <width>450</width>
-       <height>32</height>
+       <width>500</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -217,8 +217,8 @@
       <rect>
        <x>110</x>
        <y>90</y>
-       <width>121</width>
-       <height>32</height>
+       <width>120</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -274,8 +274,8 @@
       <rect>
        <x>110</x>
        <y>240</y>
-       <width>71</width>
-       <height>32</height>
+       <width>120</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -320,10 +320,10 @@
    <widget class="QPushButton" name="btnsearch">
     <property name="geometry">
      <rect>
-      <x>600</x>
+      <x>680</x>
       <y>130</y>
-      <width>91</width>
-      <height>31</height>
+      <width>120</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -340,19 +340,37 @@
    <widget class="QPushButton" name="btn_back">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>30</y>
-      <width>93</width>
-      <height>28</height>
+      <x>850</x>
+      <y>20</y>
+      <width>120</width>
+      <height>35</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
      <string>Quay lại</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>520</y>
+      <width>120</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reset</string>
     </property>
    </widget>
   </widget>
@@ -361,7 +379,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1000</width>
      <height>26</height>
     </rect>
    </property>

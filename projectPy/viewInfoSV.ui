@@ -9,39 +9,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>706</height>
+    <width>1000</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>10</y>
-      <width>191</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Sinh Viên Xem Điểm</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>110</y>
-      <width>191</width>
-      <height>41</height>
+      <y>160</y>
+      <width>201</width>
+      <height>35</height>
      </rect>
     </property>
     <property name="font">
@@ -56,10 +38,10 @@
    <widget class="QLineEdit" name="msv">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>110</y>
-      <width>201</width>
-      <height>41</height>
+      <x>330</x>
+      <y>160</y>
+      <width>251</width>
+      <height>35</height>
      </rect>
     </property>
     <property name="font">
@@ -71,15 +53,15 @@
    <widget class="QPushButton" name="search">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>110</y>
-      <width>81</width>
-      <height>41</height>
+      <x>590</x>
+      <y>160</y>
+      <width>129</width>
+      <height>35</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>11</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
@@ -93,20 +75,25 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>170</y>
-      <width>551</width>
-      <height>391</height>
+      <y>220</y>
+      <width>781</width>
+      <height>331</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
     <property name="title">
-     <string/>
+     <string>Thông tin </string>
     </property>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>20</y>
-       <width>91</width>
+       <y>30</y>
+       <width>100</width>
        <height>31</height>
       </rect>
      </property>
@@ -122,9 +109,9 @@
     <widget class="QLineEdit" name="name">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>20</y>
-       <width>361</width>
+       <x>200</x>
+       <y>30</y>
+       <width>481</width>
        <height>31</height>
       </rect>
      </property>
@@ -132,27 +119,6 @@
       <font>
        <pointsize>12</pointsize>
       </font>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="day">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>60</y>
-       <width>141</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string/>
      </property>
      <property name="readOnly">
       <bool>true</bool>
@@ -162,8 +128,8 @@
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>60</y>
-       <width>91</width>
+       <y>80</y>
+       <width>100</width>
        <height>31</height>
       </rect>
      </property>
@@ -179,8 +145,8 @@
     <widget class="QLineEdit" name="sex">
      <property name="geometry">
       <rect>
-       <x>390</x>
-       <y>60</y>
+       <x>560</x>
+       <y>80</y>
        <width>121</width>
        <height>31</height>
       </rect>
@@ -197,8 +163,8 @@
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>310</x>
-       <y>60</y>
+       <x>480</x>
+       <y>80</y>
        <width>91</width>
        <height>31</height>
       </rect>
@@ -216,8 +182,8 @@
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>100</y>
-       <width>91</width>
+       <y>130</y>
+       <width>100</width>
        <height>31</height>
       </rect>
      </property>
@@ -233,9 +199,9 @@
     <widget class="QLineEdit" name="phone">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>100</y>
-       <width>141</width>
+       <x>200</x>
+       <y>130</y>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -254,9 +220,9 @@
     <widget class="QLineEdit" name="email">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>150</y>
-       <width>361</width>
+       <x>200</x>
+       <y>180</y>
+       <width>481</width>
        <height>31</height>
       </rect>
      </property>
@@ -273,8 +239,8 @@
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>150</y>
-       <width>91</width>
+       <y>180</y>
+       <width>100</width>
        <height>31</height>
       </rect>
      </property>
@@ -287,31 +253,13 @@
       <string>Email      :</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_12">
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>200</y>
-       <width>81</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Điểm</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_13">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>240</y>
-       <width>91</width>
-       <height>31</height>
+       <x>200</x>
+       <y>230</y>
+       <width>100</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -319,17 +267,23 @@
        <pointsize>12</pointsize>
       </font>
      </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
      <property name="text">
       <string>Toán</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="toan">
      <property name="geometry">
       <rect>
-       <x>80</x>
+       <x>200</x>
        <y>280</y>
-       <width>81</width>
-       <height>31</height>
+       <width>100</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -344,10 +298,10 @@
     <widget class="QLabel" name="label_14">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>240</y>
-       <width>91</width>
-       <height>31</height>
+       <x>360</x>
+       <y>230</y>
+       <width>100</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -355,17 +309,23 @@
        <pointsize>12</pointsize>
       </font>
      </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
      <property name="text">
       <string>Anh</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="anh">
      <property name="geometry">
       <rect>
-       <x>240</x>
+       <x>360</x>
        <y>280</y>
-       <width>81</width>
-       <height>31</height>
+       <width>100</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -380,10 +340,10 @@
     <widget class="QLabel" name="label_15">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>240</y>
-       <width>91</width>
-       <height>31</height>
+       <x>500</x>
+       <y>230</y>
+       <width>100</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -391,17 +351,23 @@
        <pointsize>12</pointsize>
       </font>
      </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
      <property name="text">
       <string>CNTT</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="cntt">
      <property name="geometry">
       <rect>
-       <x>380</x>
+       <x>500</x>
        <y>280</y>
-       <width>81</width>
-       <height>31</height>
+       <width>100</width>
+       <height>30</height>
       </rect>
      </property>
      <property name="font">
@@ -413,23 +379,107 @@
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>230</y>
+       <width>100</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Môn        :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>280</y>
+       <width>100</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Điểm      :</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="day">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>80</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="back">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>580</y>
-      <width>81</width>
-      <height>31</height>
+      <x>870</x>
+      <y>20</y>
+      <width>120</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
      <string>Quay lại</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>70</y>
+      <width>231</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Bảng điểm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>560</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reset</string>
     </property>
    </widget>
   </widget>
@@ -438,8 +488,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>21</height>
+     <width>1000</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
